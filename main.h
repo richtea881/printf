@@ -1,5 +1,5 @@
-#ifndef _PRINTF_H_
-#define _PRINTF_H_
+#ifndef GUARD
+#define GUARD
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -34,7 +34,6 @@
  *
  * @h_modifier: on if h_modifier is specified
  * @l_modifier: on if l_modifier is specified
- *
  */
 
 typedef struct parameters
@@ -53,7 +52,6 @@ typedef struct parameters
 	unsigned int h_modifier		: 1;
 	unsigned int l_modifier		: 1;
 } params_t;
-
 /**
  * struct specifier - Struct token
  *
